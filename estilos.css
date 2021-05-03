@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.container-principal{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.container-section{
+    flex: 0 1 85vw;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.container-section__title{
+    border: solid rgb(43, 39, 39);
+    border-bottom: none;
+    flex: 1 1 300px;
+    text-align: center;
+    font-size: 30px;
+}
+.menu{
+    
+    height: 100vh;
+    width: 14vw;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgb(39, 38, 38);
+    
+}
+.menu li{
+    
+    margin-top: 5px;
+    flex: 1 0;
+    border-bottom: solid rgb(70, 70, 70);
+    list-style-type: none;
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+}
+.title{
+    background-color: rgb(39, 38, 38);
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+    position: sticky;
+    display: block;
+    top: 0;
+}
+
+/* Clock-Alarm */
+#clock-text{
+    margin-top: 3rem;
+    font-size: large;
+}
+.container__button-clock{
+    margin-top: 5rem;
+}
+
+/* Keyboard Movement */
+.scenario{
+    height: 280px;
+    
+}
+.circle{
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* Countdown */
+.countdown-text{
+    margin-top: 4rem;
+}
+
+/* Day/Night button */
+.button-dn-container{
+    display: inline-block;
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    z-index: 9000;
+}
+.button-daynight{
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10%;
+    text-align: center;
+    transition: .2s;
+    background-color: grey;
+    
+}
+.night-button{
+    background-color: grey;
+    transition: .2s;
+}
+.night{
+    background-color: grey;
+    color: whitesmoke;
+    transition: .2s;
+}
+
+/* Scroll-Up button */
+.scroll-up-button{
+    position: fixed;
+    right: 30%;
+    bottom: 13%;
+    z-index: 200;
+    opacity: 0;
+    transition: .2s;
+    
+}
+.scroll-up-on{
+    opacity: 1;
+    transition: .2s;
+}
+.scroll-up-button button{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Device Detector */
+.device-detector-text{
+    margin-top: 4rem;
+}
+
+/* Responsable responsive */
+#youtube, #maps{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Web tester */
+#form{
+    text-align: center;
+    padding-top: 20px;
+    
+}
+#form input{
+    display: block;
+    margin: auto;
+
+}
+
+/* Webcam */
+#webcam{
+    margin: auto;
+    
+}
+
+/* Geolocation */
+#geolocation{
+    margin-top: 40px;
+}
+
+/* Images filter */
+#cards-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+    
+}
+.card{
+    flex: 0 0 300px;
+    font-size: 20px;
+    background-color: #5b6d5b;
+    
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 10px;
+    transition: .3s;
+}
+.card div {
+    flex: 1 0 auto;
+    align-items: stretch;
+}
+.card-image img{
+    object-fit: fill;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.card-text{
+    padding: 1rem;
+}
+.card-text__lite-header{
+    color: #e2bcb7;
+}
+.card-text__principal-header{
+    font-size: 30px;
+    font-weight: 900;
+    color: #ca8a8b;
+}
+.card-text__text{
+    font-size: 10px;
+    font-weight: 400;
+    color: #f6e6e4;
+}
+.card-button button{
+    background-color: #ca8a8b;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px 0 10px 0;
+    
+}
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
+
+/* Gallery Slider */
+.gallery-container{
+    position: relative;
+    display:flex;
+    flex-flow: column nowrap;
+    width: 800px;
+    height: 400px;
+    align-content: center;
+    margin: auto;
+    
+}
+.gallery-container-slider{
+   position: relative;
+   z-index: 100;
+   width: 100%;
+   height: 100%;
+   
+   
+}
+.gallery-container__button-left{
+    text-decoration: none;
+}
+.gallery-container__button-right{
+    text-decoration: none;
+}
+.gallery-container-buttons{
+    display: flex;
+    position:absolute;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    top: 40%;
+    z-index: 300;
+    width: 100%;
+    opacity: .5;
+    
+}
+.gallery-container__img{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    left: 0;
+    border-radius: 15px;
+    
+}
+.gallery-container__img-active{
+    opacity: 1;
+    
+}
+
+/* Network detection */
+#network-warning{
+    display: block;
+    transition: .3s;
+    position:fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 500;
+    top: 0;
+}
+.network-warning-online{
+    background-color: rgb(139, 224, 11);
+    transition: .3s;
+}
+.network-warning-offline{
+    background-color: rgb(189, 24, 24);
+    transition: .3s;
+}

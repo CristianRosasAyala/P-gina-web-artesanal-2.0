@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container-principal">
+        <section class="container-section">
+            <div id="network-warning"></div>
+            <div class="button-dn-container">
+                <button class="button-daynight">🌙</button>
+            </div>
+            <div class="scroll-up-button">
+                <button>☝🏿</button>
+            </div>
+            <h2 class="title">Web Artesanal con Javascript</h2>
+            <article class="container-section__title" id="clock-alarm">
+                <h2 >Reloj digital y alarma sonora</h2>
+                    <button class="container__button-clock" id="start-clock">Iniciar Reloj</button>
+                    <button class="container__button-clock" id="stop-clock" disabled>Desactivar Reloj</button>
+                    <button class="container__button-clock" id="start-alarm">Iniciar Alarma</button>
+                    <button class="container__button-clock" id="stop-alarm">Desactivar Alarma</button>
+                    <audio id="audio" src="alarm.mp3"></audio>
+                    <p id="clock-text">Clock text</p>
+            </article>
+            <article class="container-section__title" id="keyboard-movement">
+                <h2 >Movimiento del teclado</h2>
+                    <div class="scenario">
+                        <div class="circle"></div>
+                    </div>
+            </article>
+            <article class="container-section__title" id="countdown">
+                <h2>Cuenta regresiva</h2>
+                <p class="countdown-text">countdown text</p>
+            </article>
+            <article class="container-section__title" id="device-detector">
+                <h2>Detector de dispositivos</h2>
+                    <p class="device-detector-text">device detector text</p>
+            </article>
+            <article class="container-section__title" id="responsable-responsive">
+                <h2>Responsable responsive</h2>
+                        <p id="youtube">youtube</p>
+                        <p id="maps">maps</p>
+            </article>
+            <article class="container-section__title" id="web-tester">
+                <h2>Responsive tester</h2>
+                    <div id="form">
+                        Ingresa URL<input type="url" id="url">
+                        Ingresa Ancho <input type="number" id="width">
+                        Ingresa Largo <input type="number" id="height">
+                        <button type="button" id="btn-openWindow">Abrir Ventana</button>
+                        <button type="button" id="btn-closeWindow">Cerrar vetana</button>
+                    </div>
+            </article>
+            <article class="container-section__title" id="webcamId">
+                <h2>WebCam</h2>
+                <video id="webcam"></video>
+            </article>
+            <article class="container-section__title" id="geolocationMe">
+                <h2>Geolocalización</h2>
+                <div id="geolocation"></div>
+            </article>
+            <article class="container-section__title" id="search-filter">
+                <h2>Filtrador de búsqueda</h2>
+                Buscar: <input type="text" class="input" >
+                <div id="cards-container">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/480/240/animals" alt="img">
+                        </div>
+                        <div class="card-text">
+                            <h6 class="card-text__lite-header">lite header</h3>
+                            <h2 class="card-text__principal-header">Animals</h2>
+                            <p class="card-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem error nesciunt voluptate nobis. Cumque fugit tempore nobis iure amet harum, inventore voluptatem dolorum dolores doloribus unde pariatur rerum? Dolore!</p>
+                        </div>
+                        <div class="card-button">
+                            <button>Try me</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/480/240/nature" alt="img">
+                        </div>
+                        <div class="card-text">
+                            <h6 class="card-text__lite-header">lite header</h3>
+                            <h2 class="card-text__principal-header">Nature</h2>
+                            <p class="card-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem error nesciunt voluptate nobis. Cumque fugit tempore nobis iure amet harum, inventore voluptatem dolorum dolores doloribus unde pariatur rerum? Dolore!</p>
+                        </div>
+                        <div class="card-button">
+                            <button>Try me</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/480/240/any" alt="img">
+                        </div>
+                        <div class="card-text">
+                            <h6 class="card-text__lite-header">lite header</h3>
+                            <h2 class="card-text__principal-header">Any</h2>
+                            <p class="card-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem error nesciunt voluptate nobis. Cumque fugit tempore nobis iure amet harum, inventore voluptatem dolorum dolores doloribus unde pariatur rerum? Dolore!</p>
+                        </div>
+                        <div class="card-button">
+                            <button>Try me</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/480/240/architecture" alt="img">
+                        </div>
+                        <div class="card-text">
+                            <h6 class="card-text__lite-header">lite header</h3>
+                            <h2 class="card-text__principal-header">Architecture</h2>
+                            <p class="card-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem error nesciunt voluptate nobis. Cumque fugit tempore nobis iure amet harum, inventore voluptatem dolorum dolores doloribus unde pariatur rerum? Dolore!</p>
+                        </div>
+                        <div class="card-button">
+                            <button>Try me</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/480/240/people" alt="img">
+                        </div>
+                        <div class="card-text">
+                            <h6 class="card-text__lite-header">lite header</h3>
+                            <h2 class="card-text__principal-header">People</h2>
+                            <p class="card-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem error nesciunt voluptate nobis. Cumque fugit tempore nobis iure amet harum, inventore voluptatem dolorum dolores doloribus unde pariatur rerum? Dolore!</p>
+                        </div>
+                        <div class="card-button">
+                            <button>Try me</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://placeimg.com/480/240/tech" alt="img">
+                        </div>
+                        <div class="card-text">
+                            <h6 class="card-text__lite-header">lite header</h3>
+                            <h2 class="card-text__principal-header">Tech</h2>
+                            <p class="card-text__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem error nesciunt voluptate nobis. Cumque fugit tempore nobis iure amet harum, inventore voluptatem dolorum dolores doloribus unde pariatur rerum? Dolore!</p>
+                        </div>
+                        <div class="card-button">
+                            <button>Try me</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="container-section__title" id="digital-giveaway">
+                <h2>Sorteo digital</h2>
+                    <input type="text" class="input-giveaway">
+                    <button class="add-button-data">Agregar Dato</button>
+                    <div class="giveaway-list"></div>
+                    <button class="giveaway-Button">Hacer Sorteo</button>
+            </article>
+            <article class="container-section__title" id="gallery-slider">
+                <h2>Galería de imágenes</h2>
+                    <div class="gallery-container">
+                        <div class="gallery-container-slider">
+                            <img src="https://placeimg.com/1080/380/animals" alt="No hay imágen" class="gallery-container__img gallery-container__img-active">
+                            <img src="https://placeimg.com/1080/380/architecture" alt="No hay imágen" class="gallery-container__img">
+                            <img src="https://placeimg.com/1080/380/nature" alt="No hay imágen" class="gallery-container__img">
+                            <img src="https://placeimg.com/1080/380/tech" alt="No hay imágen" class="gallery-container__img">
+                            <img src="https://placeimg.com/1080/380/any" alt="No hay imágen" class="gallery-container__img">
+                            <img src="https://placeimg.com/1080/380/nature" alt="No hay imágen" class="gallery-container__img">
+                            <img src="https://placeimg.com/1080/380/tech" alt="No hay imágen" class="gallery-container__img">
+                            <img src="https://placeimg.com/1080/380/any" alt="No hay imágen" class="gallery-container__img">
+                        </div>
+                        <div class="gallery-container-buttons">
+                            <a href="#gallery-slider" class="gallery-container__button-left" >◀️</a>
+                            <a href="#" class="gallery-container__button-right">▶️</a>
+                        </div>
+                    </div>
+            </article>
+            <article class="container-section__title" id="section8">Seccion numero 8</article>
+            <article class="container-section__title" id="section7">Seccion numero 7</article>
+        </section>
+        <aside class="menu">
+            <li><a href="#clock-alarm">Reloj y alarma digital</a></li>
+            <li><a href="#keyboard-movement">Movimiento del teclado</a></li>
+            <li><a href="#countdown">Cuenta regresiva</a></li>
+            <li><a href="#device-detector">Detector de dispositivos</a></li>
+            <li><a href="#responsable-responsive">Responsable responsive</a></li>
+            <li><a href="#web-tester">Web tester</a></li>
+            <li><a href="#webcamId">Webcam</a></li>
+            <li><a href="#geolocationMe">Geolocalización</a></li>
+            <li><a href="#search-filter">Filtrador de búsqueda</a></li>
+            <li><a href="#digital-giveaway">Sorteo digital</a></li>
+            <li><a href="#gallery-slider">Galería de imágenes</a></li>
+            <li><a href="#section8">SECCCION 8</a></li>
+        </aside>
+    </div>
+    <script src="principal.js" type="module"></script>
+</body>
+</html>
