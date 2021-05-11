@@ -19,7 +19,7 @@
 .container-section__title{
     border: solid rgb(43, 39, 39);
     border-bottom: none;
-    flex: 1 1 300px;
+    flex: 1 1 600px;
     text-align: center;
     font-size: 30px;
 }
@@ -32,21 +32,27 @@
     display: flex;
     flex-flow: column nowrap;
     background-color: rgb(39, 38, 38);
+    z-index: 900;
     
 }
 .menu li{
-    
-    margin-top: 5px;
     flex: 1 0;
     border-bottom: solid rgb(70, 70, 70);
     list-style-type: none;
     text-align: center;
+    padding: 10px;
+   
 }
 .menu li a{
     text-decoration: none;
     font-size: 20px;
     color: yellow;
 }
+.menu li:hover, .menu li a:hover, .is-active{
+    background-color: green;
+    color: black;
+}
+
 .title{
     background-color: rgb(39, 38, 38);
     text-align: center;
@@ -55,6 +61,7 @@
     position: sticky;
     display: block;
     top: 0;
+    z-index: 900;
 }
 
 /* Clock-Alarm */

@@ -13,6 +13,7 @@ import searchFilter from "./functions/search_filter.js";
 import digitalGiveaway from "./functions/digital_giveaway.js";
 import gallery from "./functions/gallery.js";
 import networkDetection from "./functions/network_detection.js";
+import scrollSpy from "./functions/scroll_spy.js";
 
 
 document.addEventListener('DOMContentLoaded', (e) =>{
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', (e) =>{
     digitalGiveaway('.giveaway-list', '.input-giveaway', '.add-button-data', '.giveaway-Button');
     networkDetection('network-warning', 'network-warning-online', 'network-warning-offline');
     gallery();
+    scrollSpy();
 
 });
 
