@@ -26,7 +26,7 @@
                     <button class="container__button-clock" id="stop-clock" disabled>Desactivar Reloj</button>
                     <button class="container__button-clock" id="start-alarm">Iniciar Alarma</button>
                     <button class="container__button-clock" id="stop-alarm">Desactivar Alarma</button>
-                    <audio id="audio" src="alarm.mp3"></audio>
+                    <audio id="audio" src="assets/alarm.mp3"></audio>
                     <p id="clock-text">Clock text</p>
             </section>
             <section data-scroll-spy class="container-section__title" id="keyboard-movement">
@@ -176,6 +176,22 @@
                         </div>
                     </div>
             </section>
+            <section data-scroll-spy class="container-section__title" id="smart-video">
+                <h1>Video Inteligente</h1>
+                <video src="https://s3-ap-northeast-1.amazonaws.com/daniemon/demos/The%2BVillage-Mobile.webm" muted id="video-label" autoplay></video>
+            </section>
+            <section data-scroll-spy class="container-section__title" id="validate-form">
+                <h2>Validamiento de formulario</h2>
+                <h3>Envíanos tus comentarios :D</h3>
+                <form action="" class="form-container">
+                    <input class="form-container-item" type="text" placeholder="escribe tu nombre" name="name" id="user_name" >
+                    <input class="form-container-item" type="email" placeholder="escribe un correo" name="email" id="user_mail">
+                    <input class="form-container-item" type="text" placeholder="escribe un asunto" name="subject" id="user_subject">
+                    <textarea class="form-container-item" name="text-form" cols="50" rows="10" id="user_text"></textarea>
+                    <button class="form-container-item" type="submit">Enviar</button>
+                </form>
+                
+            </section>
             <section data-scroll-spy class="container-section__title" id="section8">Seccion numero 8</section>
             
         </article>
@@ -191,6 +207,7 @@
             <li data-scroll-spy=""><a  href="#search-filter">Filtrador de búsqueda</a></li>
             <li data-scroll-spy=""><a  href="#digital-giveaway">Sorteo digital</a></li>
             <li data-scroll-spy=""><a  href="#gallery-slider">Galería de imágenes</a></li>
+            <li data-scroll-spy=""><a  href="#smart-video">Video Inteligente</a></li>
             <li data-scroll-spy=""><a  href="#section8">SECCCION 8</a></li>
         </aside>
     </div>

@@ -309,3 +309,25 @@
     background-color: rgb(189, 24, 24);
     transition: .3s;
 }
+
+/* Validate form */
+.form-container{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.form-container-item{
+    border-radius: 5px;
+    flex: 0 0 50px;
+    width: 30vw;
+    margin: 30px;
+    border: solid red 2px;
+}
+.form-container-item-correct{
+    border: solid greenyellow 2px;
+}
+.invalid-input{
+    background-color: red;
+    align-self: center;
+    margin-top: -30px;
+}

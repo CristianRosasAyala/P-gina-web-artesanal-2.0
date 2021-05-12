@@ -14,6 +14,8 @@ import digitalGiveaway from "./functions/digital_giveaway.js";
 import gallery from "./functions/gallery.js";
 import networkDetection from "./functions/network_detection.js";
 import scrollSpy from "./functions/scroll_spy.js";
+import smartVideo from "./functions/smart-video.js";
+import validateForm from "./functions/validateForm.js";
 
 
 document.addEventListener('DOMContentLoaded', (e) =>{
@@ -33,6 +35,8 @@ document.addEventListener('DOMContentLoaded', (e) =>{
     networkDetection('network-warning', 'network-warning-online', 'network-warning-offline');
     gallery();
     scrollSpy();
+    smartVideo('video-label');
+    validateForm();
 
 });
 

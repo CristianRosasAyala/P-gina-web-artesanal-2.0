@@ -2,9 +2,9 @@ const scrollSpy = () =>{
     const titles = document.querySelectorAll('section[data-scroll-spy]');
     
     const callBack = (entries) =>{
-        //console.log(entries);
+        
         entries.forEach(entry =>{
-            //console.log(entry)
+            
             let id = entry.target.getAttribute('id');
             if(entry.isIntersecting){
                 document.querySelector(`.menu a[href="#${id}"]`).classList.add('is-active');
