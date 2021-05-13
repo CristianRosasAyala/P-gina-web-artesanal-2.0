@@ -16,6 +16,7 @@ import networkDetection from "./functions/network_detection.js";
 import scrollSpy from "./functions/scroll_spy.js";
 import smartVideo from "./functions/smart-video.js";
 import validateForm from "./functions/validateForm.js";
+import narrator from "./functions/narrator.js";
 
 
 document.addEventListener('DOMContentLoaded', (e) =>{
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', (e) =>{
     scrollSpy();
     smartVideo('video-label');
     validateForm();
+    narrator();
 
 });
 

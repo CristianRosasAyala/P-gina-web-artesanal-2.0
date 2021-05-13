@@ -343,3 +343,10 @@
     width: 150px;
     
 }
+
+/* Narrator */
+
+#text-area-narrator{
+    display: block;
+    margin: 40px auto;
+}
